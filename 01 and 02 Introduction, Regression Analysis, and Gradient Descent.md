@@ -15,11 +15,11 @@
 
 ### Supervised Learning- 개요
 
-![image-20201218234159272](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218234159272.png)
+![image-20201218234159272](이미지/image-20201218234159272.png)
 
 * 집의 가격을 예측하는 문제 : "주어진 데이터로 친구가 750 square feet size의 집은 가격을 얼마로 예상할 수 있는가?"
 
-  ![image-20201218234224315](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218234224315.png)
+  ![image-20201218234224315](이미지/image-20201218234224315.png)
 
 * 직선을 그려 해당하는 가격을 예측하는 방법을 사용할 수 있다
 
@@ -32,7 +32,7 @@
 
   ### 분류(Classification)
 
-  ![image-20201218182753692](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218182753692.png)
+  ![image-20201218182753692](이미지/image-20201218182753692.png)
 
   * 위의 그래프에서 종양의 크기에 따라 0아니면 1로 분류되어 있다
   * 입력값에 대응하는 결과값을 분석하여서 이산적인(Discrete) 값을 찾는 것이다
@@ -44,7 +44,7 @@
 * Input 에 대한 output의 label이 존재하지 않을 때, Data Set을 Cluster하는 학습이다
 * ex) Cocktail party problem
 
-![image-20201218234248171](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218234248171.png)
+![image-20201218234248171](이미지\image-20201218234248171.png)
 
 ## **Linear Regression**-Notation
 
@@ -84,7 +84,7 @@
 
 ### <Cost Function 의 이해>
 
-![image-20201218224325844](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218224325844.png){:.left} ![image-20201218224924843](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218224924843.png){:. right}
+![image-20201218224325844](이미지\image-20201218224325844.png){:.left} ![image-20201218224924843](이미지\image-20201218224924843.png){:. right}
 
 
 
@@ -104,7 +104,7 @@
 
 * Cost Function을 최소로 만드는 파라미터를 구하는 알고리즘
 
-  ![image-20201218225744535](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218225744535.png)
+  ![image-20201218225744535](이미지\image-20201218225744535.png)
 
 * $ \theta $ 를 $\alpha$(학습속도) x (Cost Function을 $\theta$ 에 대해 편미분 한 값) 을 빼주면서 점차 Cost function이 최소화 되는 $\theta$ 값을 찾는 알고리즘
 
