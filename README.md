@@ -17,4 +17,4 @@ Ordered
    1. Item 3b
    
 
-![Github logo](/github_choi/image_test/12.png)
+![Github logo](C:\github_choi\image_test\images)
