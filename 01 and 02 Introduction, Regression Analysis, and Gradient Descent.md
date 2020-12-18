@@ -44,7 +44,7 @@
 * Input 에 대한 output의 label이 존재하지 않을 때, Data Set을 Cluster하는 학습이다
 * ex) Cocktail party problem
 
-![image-20201218234248171](이미지\image-20201218234248171.png)
+![image-20201218234248171](이미지/image-20201218234248171.png)
 
 ## **Linear Regression**-Notation
 
@@ -84,7 +84,7 @@
 
 ### <Cost Function 의 이해>
 
-![image-20201218224325844](이미지\image-20201218224325844.png){:.left} ![image-20201218224924843](이미지\image-20201218224924843.png){:. right}
+![image-20201218224325844](이미지/image-20201218224215944.png){:.left} ![image-20201218224924843](이미지/image-20201218224924843.png){:. right}
 
 
 
@@ -104,11 +104,11 @@
 
 * Cost Function을 최소로 만드는 파라미터를 구하는 알고리즘
 
-  ![image-20201218225744535](이미지\image-20201218225744535.png)
+  ![image-20201218225744535](이미지/image-20201218225744535.png)
 
 * $ \theta $ 를 $\alpha$(학습속도) x (Cost Function을 $\theta$ 에 대해 편미분 한 값) 을 빼주면서 점차 Cost function이 최소화 되는 $\theta$ 값을 찾는 알고리즘
 
-* 이 때, 각 $\theta$ 는 동시에 업데이트 해야 하는 것에 주의한다![image-20201218231218862](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\image-20201218231218862.png)
+* 이 때, 각 $\theta$ 는 동시에 업데이트 해야 하는 것에 주의한다![image-20201218231218862](이미지/image-20201218231218862.png)
 
 * 오른쪽 그래프에서와 같이 파라미터들을 조정해나가며 가설함수가 데이터에 fitting 되고 있는 것을 볼 수 있다
 
