@@ -17,4 +17,4 @@ Ordered
    1. Item 3b
    
 
-![이미지..](image_test/images/12.png)
+![이미지..](./image_test/images/12.png)
