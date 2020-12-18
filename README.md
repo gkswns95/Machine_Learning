@@ -14,5 +14,7 @@ Ordered
 1. Item 2
 1. Item 3
    1. Item 3a
-   1. Item 3b  
+   1. Item 3b
+   
+
 ![Github logo](C:\github_choi\image_test)
