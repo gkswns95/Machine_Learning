@@ -6,7 +6,7 @@
 
 * 종양 : 양성종양인지 악성종양인지 판단하는 문제
 
-  ![image-20201219151944378](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\1.png)  
+  ![image-20201219151944378](이미지\1.png)  
 
 * 이전에 사용하던 linear regression을 이욯하여 위와 같은 데이터 셋의 분류 문제를 풀어본다
 
@@ -14,7 +14,7 @@
 
   ​		 h(x) < 0.5, predict "y=1" 이라고 한다면 위의 데이터 셋에는 정확히 동작하는 것으로 보인다.
 
-![image-20201219153001682](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\2.png).
+![image-20201219153001682](이미지\2.png).
 
 * 하지만 이렇게 데이터 셋이 추가되면 linear regression으로는 정확한 답을 예측하기가 쉽지 않기 때문에
 
@@ -37,7 +37,7 @@
 
 * 참고로 Sigmoid function = Logistic function 둘 다  같은 함수를 의미한다
 
-![image-20201219154423145](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\3.png)
+![image-20201219154423145](이미지\3.png)
 
 * Sigmoid 함수의 개형을 보면 z값의 수평축을 기준으로 z가 음의 무한대 방향으로 가면 g(z) = 0으로 수렴되고
 
@@ -57,7 +57,7 @@
 
   즉 $\theta$<sup>T</sup>x = -3 + x1 + x2 의 값의 부호에 따라 예측값이 정해지는 것을 알 수 있다.
 
-  <img src="C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\4.png" alt="image-20201219160953460" style="zoom:67%;" />
+  <img src="이미지\4.png" alt="image-20201219160953460" style="zoom:67%;" />
 
   위의 그림처럼 -3 + x1 + x2 의 값이 <0 이면 동그라미 영역에 속하는 것이고 >0이면 x영역에 속하는 직선이 만들어지는 것을
 
@@ -69,7 +69,7 @@
 
   만약 아래와 같이 데이터 셋들의 집합이 주어진다면 어떻게 해야할까?
 
-  ![image-20201219162059905](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\5.png)
+  ![image-20201219162059905](이미지\5.png)
 
 * 이렇게 주어진 경우에는 직선모양의 decision boundary로 해결할 수 없어 보인다.
 
@@ -95,19 +95,19 @@
   $$
   Logistic Regression문제를 이와 같은 Cost function을 적용해보자.
 
-  ![image-20201219164017322](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\6.png)
+  ![image-20201219164017322](이미지\6.png)
 
   이와같은 그래프 개형으로 non- convex 형태가 된다. 즉 Global Minimum으로 수렴하는 것이 보장되지 않는 문제가 생긴다
 
   그렇다면 Logistic Regression을 위한 Cost function이 필요할 것이고 이것에 대해서 정의해 보겠다
 
-![image-20201219164426962](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\7.png)
+![image-20201219164426962](이미지\7.png)
 
   
 
 * Cost function을 이와같이 사용하는 이유를 알아보겠다.
 
-  ![image-20201219165225048](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\8.png)
+  ![image-20201219165225048](이미지\8.png)
 
   우선 y=1 인 경우의 -log(h(x))의 그래프를 그려보면 h(x)는 0 과 1 사이의 값을 같기 때문에 이와 같은 개형이 나온다.
 
@@ -115,7 +115,7 @@
 
   ​        y=1, h(x) =0 예측값과 불일치했을 떄 Cost 가 무한대로 증가하는 것을 알 수 있다.
 
-  ![image-20201219165536982](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\9.png)
+  ![image-20201219165536982](이미지\9.png)
 
   반대로 y=0인 경우의 -log(1-h(x)) 의 그래프를 그려보면 위와 같은 개형이 그려진다.
 
@@ -127,7 +127,7 @@
 
 ## Simplified Cost Function and Gradient Descent
 
-![image-20201219165929179](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\10.png)
+![image-20201219165929179](이미지\10.png)
 
 * Logistic regression 의 cost function을 위와 같이 두 줄을 이용해서 표기하였는데 Gradient Descent 알고리즘을 유도하기 쉽게
 
@@ -139,7 +139,7 @@
 
 * 또한 Cost Function을 minimize 하기 위해서 이번에도 선형회기법과 같은 방법으로 Gradient Descent 방식을 이용 할 것이다
 
-  ![image-20201219171207805](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\11.png)
+  ![image-20201219171207805](이미지\11.png)
 
   이전의 선형회기때와 식은 같지만 h(x) 가설함수가 달라졌기 때문에 값은 다르게 나온다.
 
@@ -151,7 +151,7 @@
 
 * 이러한 분류 문제 이외에도 ==여러개의 Class로 분류되는 문제==를 Multi-class Classification 문제라고 한다
 
-  ![image-20201219172533840](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\12.png)
+  ![image-20201219172533840](이미지\12.png)
 
   * 이러한 문제를 해결하기 위해서는 One-vs-all(One-vs-rest) 알고리즘을 사용하여 문제를 해결 할 수 있다
 
