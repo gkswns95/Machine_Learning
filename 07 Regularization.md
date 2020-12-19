@@ -2,7 +2,7 @@
 
  ### The Problem of  Overfitting
 
-![image-20201219184449228](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\13.png)
+![image-20201219184449228](이미지/13.png)
 
 * 집값 예측 문제에 대해서 3개의 가설함수가 주어져 있다. 순서대로 가설함수 A,B,C라고 하겠다
 * A = 데이터가 적합하게 맞지 않기 때문에 underfit or high bias 상태라고 말한다.
@@ -35,7 +35,7 @@ feature들 중에서 중복되거나 예측하는데 도움이 안되는 요소�
 
 ### Cost Function 
 
-![image-20201219190748020](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\14.png)
+![image-20201219190748020](이미지/14.png)
 
 위의 두 개의 그래프를 보아 왼쪽에 그래프에 비해 오른쪽의 그래프는 과적합이 되어 있는 것을 한눈에 알 수 있다
 
