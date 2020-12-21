@@ -2,11 +2,11 @@
 
 * 만약에 아래 그림과 같이 복잡한 분류 문제가 있다고 하자.
 
-  ![image-20201221230740976](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\15.png)
+  ![image-20201221230740976](이미지/15.png)
 
    이렇게 복잡한 분류 문제를 해결하기 위해서는 decision boundary가 Non-linear하게 그려져야 한다. Logistic regression을 이용하여 decision boundary를 구할 수 있지만, 다항식이 복잡해지고 심지어는 과적합 문제가 발생할 수 있는 가능성이 커지게 된다.
 
-  ![image-20201221232106632](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\16.png)
+  ![image-20201221232106632](이미지/16.png)
 
   * 예를들어 위와 같이 자동차가 맞는지 아닌지 알아내는 알고리즘을 구현할 때
 
@@ -23,7 +23,7 @@
 
   ## Model representation 1
 
-  ![image-20201221233013280](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\17.png)
+  ![image-20201221233013280](이미지/17.png)
 
   * 위의 사진은 Neurone의 구조이고 크게 cell body, input wires(dendrite), Output wire(axon) 으로 구성된다
 
@@ -35,7 +35,7 @@
 
   ### Artificial neural network - representation of a neurone
 
-  ![image-20201221233531346](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\18.png)
+  ![image-20201221233531346](이미지/18.png)
 
   
 
@@ -45,7 +45,7 @@
 
   ### Neural networks - notation
 
-  ![image-20201221234032209](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\19.png)
+  ![image-20201221234032209](이미지/19.png)
 
   * a<sub>i</sub><sup>(i)</sup> = activation of unit i in layer j
   * $\theta$<sup>(j)</sup> = matrix of parameters controlling the function mapping from layer j to layer j+1
@@ -58,7 +58,7 @@
 
   ### Forward Propagation(전방 전파)
 
-  ![image-20201221234858502](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\20.png)
+  ![image-20201221234858502](이미지/20.png)
 
   * Hidden layer 의 값 $a^{(2)}$ 들은 그 전의 layer의 가중치를 x의 값과 곱하고 그 값을 activation 한 값을 저장한다. 이 때 activation function 을 활성화 시키기 전의 함수의 인자 값을 z 라고 표현한다면 위의 사진과 같이 g(z) 형식으로 표기할 수 있다
 
@@ -74,7 +74,7 @@
 
   <Logistic regression 과 NNs의 차이점>
 
-  ![image-20201221235802919](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\21.png)
+  ![image-20201221235802919](이미지/21.png)
 
   * NNs 의 input layer 층이 없다고 했을 때 위와 같은 형태의 모델이 된다.
 
@@ -86,23 +86,23 @@
 
 ## **Neural network example - computing a complex, nonlinear function of the input**
 
-![image-20201222001713305](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\22.png)
+![image-20201222001713305](이미지/22.png)
 
 * Non-linear 한 문제가 주어졌을 때 어떻게 NNs를 이용하여 풀 수 있는지 증명을 할 수 있다
 
    ### Neural Network example 1: AND function
 
-![image-20201222001929347](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\23.png)
+![image-20201222001929347](이미지/23.png)
 
 * x<sub>1</sub>,x<sub>2</sub>는 binary 값을 가지며, y= x<sub>1</sub> AND x<sub>2</sub> 인 문제가 있다. 각 각 weight를 -30 +20 +20 을 주었을 때
 
-  ![image-20201222002128173](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\24.png)
+  ![image-20201222002128173](이미지/24.png)
 
   위와 같이 x<sub>1</sub> x<sub>2</sub> 의 값들이 모두 1일 때만 1이 되는 AND문제를 sigmoid function 을 통해서 표현할 수 있다
 
 ### **Neural Network example 2: NOT function**
 
-![image-20201222002328341](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\25.png)
+![image-20201222002328341](이미지/25.png)
 
 * AND 문제와 마찬가지로 OR문제도 각 weight값을 적절히 이용하여 or 문제를 해결할 수 있다
 
@@ -110,9 +110,9 @@
 
 위에서 만든 AND, OR 모델을 이용하여 Non-linear Decision Boundary 를 구할 수 있는 모델을 만들어 본다
 
-![image-20201222002641055](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\26.png)
+![image-20201222002641055](이미지/26.png)
 
 각각의 모델을 hidden layer를 통해 연결해 주면 아래와 같은 Non-linear 한 Decision Boundary를 구할 수 있게 된다.
 
-![image-20201222002757478](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\27.png)
+![image-20201222002757478](이미지/27.png)
 
