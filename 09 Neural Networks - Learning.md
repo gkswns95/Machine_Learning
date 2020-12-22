@@ -2,7 +2,7 @@
 
 ## **Neural network cost function**
 
-![image-20201222133536365](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\28.png)
+![image-20201222133536365](이미지/28.png)
 
 * 분류 문제에 신경망을 적용하는 것에 대해 공부하기 위해 위의 그림처럼 신경망이 주어졌을 때 필요한 용어들을 정의해 보겠다
 
@@ -14,7 +14,7 @@
 
   위의 모델에서 s<sub>1</sub> =3 , s<sub>2</sub> = 5, s<sub>3</sub> =5, s<sub>4</sub> = s<sub>l</sub> = 4 각 층의 뉴런의 개수이다
 
-  ![image-20201222134014272](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\29.png)
+  ![image-20201222134014272](이미지/29.png)
 
   이제 두 가지 유형의 분류 문제를 고려하자
 
@@ -24,13 +24,13 @@
 
       y는 k개의 label로 이루어져 있고 Output unit 도 k개로 이루어져 있다. (s<sub>l</sub> = k)
 
-    ![image-20201222135900492](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\30.png)
+    ![image-20201222135900492](이미지/30.png)
 
     * Logistic regression에서의 정규화 용어가 추가된 cost function의 형태는 다음과 같다. 우리는 인공신경망의 Cost function으로 
 
       이 logistic regression의 cost function을 일반화 한 것을 쓸 것이다
 
-      ![image-20201222140128019](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\31.png)
+      ![image-20201222140128019](이미지/31.png)
 
       * Neural net work 에서 k개의 class 에 대한 출력을 각각 표시하기 위해 (h<sub>$\theta$</sub>(x))<sub>i</sub>  로 i의 첨자로 각각 k개의 output을 표현한다
 
@@ -41,7 +41,7 @@
   * $\delta$<sup>4</sup> = a<sup>4</sup> - y 
   * $\delta$<sup>(3)</sup> = ($\theta$<sup>(3)</sup>)<sup>T</sup>$\delta$<sup>(4)</sup>.*g<sup>/</sup>(z<sup>(3)</sup>)
 
-  ![image-20201222211747682](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\32.png)
+  ![image-20201222211747682](이미지/32.png)
 
   * Backpropagation은 각각 node의 error 값을 위의 계산처럼 $\delta$ 로 구한다. 그 후에 각각 error가 미치는 영향을 업데이트 하며 가중치를 줄여
 
@@ -53,7 +53,7 @@
 
 역전파가 잘 진행되고 있는지 확인하는 Gradient Checking 방법이 필요하다.
 
-![image-20201222212939939](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\33.png)
+![image-20201222212939939](이미지/33.png)
 
 * 이러한 J($\theta$) 에 대한 그래프가 주어졌을 때, $\theta$ 값의 접선의 기울기를 그려보면 위에처럼 파란색 직선으로 그릴 수 있다.
 
@@ -71,7 +71,7 @@
 
    마찬가지로 NNs에 같은 방식을 적용해보자.
 
-  ![image-20201222213912191](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\34.png)
+  ![image-20201222213912191](이미지/34.png)
 
 모든 $\theta$ 에 대해 0으로 초기화 하였다고 생각하자
 
