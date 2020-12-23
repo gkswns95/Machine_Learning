@@ -2,7 +2,7 @@
 
 이제까지 다양한 학습 알고리즘을 배웠고 앞으로는 이 학습 알고리즘을 효과적으로 적용하는 방법에 대해서 공부해 보겠다.
 
-![image-20201223175237832](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\35.png)
+![image-20201223175237832](이미지/35.png)
 
 집값을 예측하는 문제를 Regularized Linear Regression을 사용할 때의 Cost Function이다. 집값 예측에 대한 성능을 향상시키거나 문제가 발생할
 
@@ -26,12 +26,12 @@
 
 ## Evaluating a Hypothesis
 
- ![image-20201223180821532](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\36.png)
+ ![image-20201223180821532](이미지/36.png)
 
 * 가설함수를 평가하기 위해 위의 그래프 처럼 함수를 직접 그려서 판단하는 방법이 존재한다.
 * 하지만 만약 이보다 훨씬 많은 features가 존재한다면 직접 그려서 확인하는 것은 너무 복잡한 일일 것이다.
 
-![image-20201223181114873](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\37.png)
+![image-20201223181114873](이미지/37.png)
 
 위와 같은 Data Set이 존재할 때, 먼저 70%,30% 비율로  두 개의 부분으로 나눈다
 
@@ -51,7 +51,7 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 ### Model Selection
 
-![image-20201223182457538](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\38.png)
+![image-20201223182457538](이미지/38.png)
 
 먼저 model을 선택하는 방법에 대해서 알아보겠다. 위의 10개의 모델이 있고 각각의 모델은 d(degree of polynomial) 다항식의 차수로 1~10 까지의
 
@@ -61,7 +61,7 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 느껴진다. 하지만 이 방법은 또한 Test set 에 대한 과적합의 문제가 발생할 수 있는 가능성이 있기 때문에 실제로 우리는 다른 방법을 사용하여 모델을 선택한다.
 
-![image-20201223183124864](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\39.png)
+![image-20201223183124864](이미지/39.png)
 
 이번에는  Data Set 을 총 세부분으로 나누었다
 
@@ -77,12 +77,12 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 ## Diagnosing Bias vs. Variance
 
-![image-20201223184544354](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\40.png)
+![image-20201223184544354](이미지/40.png)
 
 * High bias  = 가설함수가 simple하여 생기는 underfit 문제
 * High variance = 가설함수가 너무 complex하여 생기는 overfit 문제
 
-![image-20201223185509105](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\41.png)
+![image-20201223185509105](이미지/41.png)
 
  polynomial 의 차수가 증가함에 따른 error의 그래프를 그려보았을 때, 다음과 같이 두 개의 그래프로 나오는 것을 알 수 있다.
 
@@ -93,7 +93,7 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 ## **Regularization and bias/variance**
 
-![image-20201223191013117](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\42.png)
+![image-20201223191013117](이미지/42.png)
 
 다 차원의 polynomial Model에서 우리는 Overfitting 문제를 해결하기 위해 정규화를 사용하였다. 정규화 계수인 $\lambda$ 가 너무 작을 때와 너무 클 때를 보면
 
@@ -103,7 +103,7 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 그렇다면 람다 계수의 적절한 값의 모델을 선택하는 방법에 대해서 알아보자
 
-![image-20201223191849110](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\43.png)
+![image-20201223191849110](이미지/43.png)
 
 12개의 모델의 람다 값이 전부 다를 때의 어떤 람다 계수를 구해야 좋은 모델을 선택하는지에 대한 방법은 다음과 같다.
 
@@ -115,7 +115,7 @@ raw data인 나머지 30% 테스트용 데이터로 성능을 검사하는 방�
 
 Learning Curves 는 알고리즘의 성능을 향상시키기 위해 bias,variance 문제에 발생하는지 안하는지를 체킹하는 방법으로 그래프를 그려 확인 할 수 있다.
 
-![image-20201223193735322](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\44.png)
+![image-20201223193735322](이미지/44.png)
 
 우선 m(학습 데이터 의 사이즈) 의 크기에 따른 error그래프를 그려본다면, $J_{train}(\theta)$ 와 $J_{cv}(\theta)$ 에 관계를 나타내면
 
@@ -128,14 +128,14 @@ Learning Curves 는 알고리즘의 성능을 향상시키기 위해 bias,varian
 
 위에서 Learning curves의 모양을 배웠는데, High bias인 경우에는 어떤식으로 그래프가 그려지는지 확인하여 보겠다.
 
-![image-20201223194850893](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\45.png)
+![image-20201223194850893](이미지/45.png)
 
 * high bias이기 때문에 m이 늘어날수록 J train 의 값은 커질것이고, 학습이 되어 J cv 값은 어느정도로 줄 것이다.
 * 다만, 이러한 문제에서는 일정 크기 이상의 Training set에 대해서는 size가 커지더라도 효과가 없을 것이다
 
 ### High Variance
 
-![image-20201223195131552](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\46.png)
+![image-20201223195131552](이미지/46.png)
 
 * High Variance는 train error는 커지며 test error가 감소하지만 둘 사이의 gap이 커지는 것을 알 수 있다.
 * 이러한 개형의 learning curves 가 보이면 overfitting 의 문제가 발생했다는 것을 인지하고 해결책을 찾아야 할 것이다.
