@@ -8,7 +8,7 @@
 
 ### **An alternative view of logistic regression**
 
-![image-20201227163624371](C:\Users\User\AppData\Roaming\Typora\typora-user-images\60.png)
+![image-20201227163624371](이미지/60.png)
 
 logistic regression 에서 사용하던 가설함수의 형태는 위와 같다. 우리는 이 가설함수를 변형하여 새로운 SVM의 가설함수와 Cost function 에 대해서 설명할 것이다.
 
