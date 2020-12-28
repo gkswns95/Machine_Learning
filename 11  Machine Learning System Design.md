@@ -4,7 +4,7 @@
 
 직면하는 문제들에 대해서, 시스템을 전략화하는 방법에 대한 것을 배울 것이다.
 
-![image-20201223231319917](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\47.png)
+![image-20201223231319917](이미지/47.png)
 
 ## Building a spam classifier
 
@@ -39,7 +39,7 @@ Spam 문자를 걸러내는 Classifier를 만든다고 하고 하고 label 1 = s
 * What type of email it is?
 * What cues (features) you think would have helped the algorithm classify them correctly
 
-![image-20201223235252491](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\48.png)
+![image-20201223235252491](이미지/48.png)
 
 이처럼 어떤종류의 Email인지 종류별로 분류하고, 현재 Steal passwords에 대한 분류가 제대로 이루어지지 않는 것을 알 수 있다. 이 사실을 바탕으로
 
@@ -51,7 +51,7 @@ Spam 문자를 걸러내는 Classifier를 만든다고 하고 하고 label 1 = s
 
 마지막으로 학습 알고리즘을 개발할 때 유용한 팁 중에 하나로 학습 알고리즘에 대한 수치적 평가가 있는지 확인하는 것이다.
 
-![image-20201224000154472](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\49.png)
+![image-20201224000154472](이미지/49.png)
 
 
 
@@ -65,13 +65,13 @@ universe / university 와 같은 단어는 명백히 뜻이 다른 단어로 구
 
 판단하면 된다.
 
-![image-20201224001240734](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\50.png)
+![image-20201224001240734](이미지/50.png)
 
 ## **Error metrics for skewed classes**
 
 Skewed classes 는 분류 문제에서 발생하는 문제로서 한 집단이 다른 집단보다 많이 작은경우 생기는 집단을 말한다.
 
-![image-20201224003845159](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\51.png)
+![image-20201224003845159](이미지/51.png)
 
 여기 이전에 공부하였던 암 분류 문제 예시가 있다. 만약 악성종양이면 y=1, 양성종양이면 y=0으로 분류하는 logistic regression model이 있었다.
 
@@ -89,7 +89,7 @@ Skewed classes 는 분류 문제에서 발생하는 문제로서 한 집단이 �
 
 이러한 skewed classes 문제에 직면하였을 때 다른 Error metrics를 생각해 내야 할 것이고 그러한 metrics 가 바로 precision 과 recall 이다.
 
-![image-20201224011701634](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\52.png)
+![image-20201224011701634](이미지/52.png)
 
 위와 같이 Actual class 와 predicted class 관계에 대해서 표를 그려서 총 4부분으로 나누어 볼 수있다.
 
@@ -106,7 +106,7 @@ Skewed classes 는 분류 문제에서 발생하는 문제로서 한 집단이 �
 
 * Recall : 암에 걸린 사람들 중에 우리가 암에 걸린 사람을 맞춘 비율을 의미한다.
 
-  ![image-20201224013610697](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\53.png)
+  ![image-20201224013610697](이미지/53.png)
 
 우리가 Logistic regression 을 이용하여 분류 문제를 풀 때, threshold 값을 정하여 그 값이 0.5이상이면 1, 0.5 이하이면 0 으로 예측을 했었다.
 
@@ -120,27 +120,27 @@ Skewed classes 는 분류 문제에서 발생하는 문제로서 한 집단이 �
 
 우리가 암의 실제 사례를 너무 많이 놓치는 것을 피하기를 원할때를 가정하자.
 
-![image-20201224013947438](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\54.png)
+![image-20201224013947438](이미지/54.png)
 
 암을 가진 환자가 있는데 암이 없다고 예측을 하면 좋은 예측이 될 수 없다. 이러한 경우에는 반대로 threshold 값을 낮추어 가설함수를 적용하면 된다.
 
 그렇다면 아까와는 반대로 Higher recall, lower precision 의 형태의 결과가 나올 것이다.
 
-![image-20201224014241723](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\55.png)
+![image-20201224014241723](이미지/55.png)
 
 Recall과 Precision의 관계를 그래프로 표현하면 위와 같이 서로 대조되는 모습을 갖는다. 이를 precision 과 recall 의 trading off라고 부른다
 
-![image-20201224014538729](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\56.png)
+![image-20201224014538729](이미지/56.png)
 
 우리에게 이러한 알고리즘 3개가 주어져 있다고 가정하자. 우리는 이 알고리즘들 중에서 어떤 것을 골라야 가장 좋은 성능을 가질 수 있는지 결정할 수 있을까?
 
-![image-20201224014933398](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\57.png)
+![image-20201224014933398](이미지/57.png)
 
 이와 같은 공식을 사용하여 어떤것이 최적의 알고리즘인지 판단할 수가 있게 된다.
 
 ## Data For Machine Learning
 
-![image-20201224131021420](C:\Users\Choi\AppData\Roaming\Typora\typora-user-images\58.png)
+![image-20201224131021420](이미지/58.png)
 
 문장 빈칸에서 어떠한 단어가 들어갈 지 고르는 알고리즘을 사용하려면 여러 알고리즘이 존재한다.
 
