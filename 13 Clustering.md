@@ -12,7 +12,7 @@
 
 k-means 알고리즘에 대해서 설명하기 전에 비지도학습의 학습과정에 대해서 먼저 이야기하겠다.
 
-* 우선 Cluster Centroids은 두 개의 cluster를 구성하는 중심점 역할을 하는 임의의 point라고 말할 수 있다. 비지도학습에서의 첫 번째 동작은 임의의 Cluster Centroids를 위치시키는 것이 첫 번째 동작이다.
+* 우선 Cluster Centroids은 cluster를 구성하는 중심점 역할을 하는 임의의 point라고 말할 수 있다. 비지도학습에서의 첫 번째 동작은 임의의 Cluster Centroids를 위치시키는 것이 첫 번째 동작이다.
 * 두 번째로는 이 임의의 Centroids들을 이동시키면서 data set을 적절히 구분지어 가는 과정이 된다. 
 
 ![image-20201229204319220](이미지/85.png)
